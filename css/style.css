@@ -11,6 +11,11 @@ body {
     background-color: #F3F3F3;
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
