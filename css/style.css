@@ -34,6 +34,11 @@ section {
     padding: 5rem 0;
 }
 
+.main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
 .bg-white {
     background-color: #FFFFFF;
 }
@@ -157,9 +162,8 @@ header {
 
 /* popular */
 
-.main-title {
-    font-size: 2.25rem;
-    font-weight: 700;
+.popular {
+    padding: 5rem 2.5rem;
 }
 
 .color-blue {
@@ -185,6 +189,10 @@ header {
     gap: 17rem;
     padding: 1.563rem;
     transform: translate(0);
+}
+
+.popular-card__container-gap {
+    gap: 15.5rem;
 }
 
 .text-20 {
@@ -220,12 +228,13 @@ header {
 .popular-cards {
     overflow-x: scroll;
     width: 100%;
-    padding: 0 2.5rem;
+    height: 478px;
 }
 
 .popular-cards::-webkit-scrollbar {
     height: 7px;
     background: #F3F3F3;
+    border-radius: 25px;
 }
 
 .popular-cards::-webkit-scrollbar-thumb:horizontal {
