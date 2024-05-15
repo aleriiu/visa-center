@@ -294,7 +294,8 @@ header {
     gap: 2.688rem;
 }
 
-.services-card, .swiper-slider {
+.services-card,
+.swiper-slider {
     background-color: #F3F3F3;
     display: flex !important;
     flex-direction: column;
@@ -467,4 +468,10 @@ input {
     padding: 0.625rem 8.75rem 0.625rem 0.625rem;
     border: 0 solid #F3F3F3;
     border-radius: 8px;
+}
+
+.text-checked {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #000000;
 }
