@@ -401,6 +401,36 @@ header {
     font-weight: 500;
 }
 
+/* reviews */
+
+.reviews-card {
+    width: 50%;
+    border-radius: 40px;
+    display: flex;
+    align-items: flex-start;
+    padding: 2.5rem;
+    gap: 2.5rem;
+}
+
+.reviews-cards {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.section-swiper {
+    padding-left: 7.563rem;
+    padding-right: 7.563rem;
+}
+
+.reviews__img {
+    width: 130px;
+}
+
+.text-height {
+    line-height: 150%;
+    font-weight: 400;
+}
+
 /* contacts */
 
 .contacts {
