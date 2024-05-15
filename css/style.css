@@ -465,13 +465,78 @@ header {
 }
 
 input {
-    padding: 0.625rem 8.75rem 0.625rem 0.625rem;
+    padding: 0.625rem;
     border: 0 solid #F3F3F3;
     border-radius: 8px;
+    width: 350px;
+}
+
+.checked-container {
+    display: flex;
+    gap: 0.375rem;
 }
 
 .text-checked {
     font-size: 0.75rem;
     font-weight: 300;
     color: #000000;
+}
+
+.form-btn {
+    background-color: #001F8E;
+    border: 0 solid #001F8E;
+    color: #F3F3F3;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 3.125rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 1.25rem;
+    border-radius: 40px 40px 0 0;
+}
+
+.container__contacts-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    gap: 1.625rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.contacts-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.society-img__footer {
+    width: 28px;
+}
+
+.contacts-group-gap {
+    gap: 1.25rem;
 }
