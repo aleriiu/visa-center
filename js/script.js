@@ -1,10 +1,15 @@
 'use strict';
 
+
+const prevBtn = document.querySelector('.button-prev');
+const nextBtn = document.querySelector('.button-next');
+
 const swiper = new Swiper('.services', {
 
     direction: 'horizontal',
     loop: true,
-    slidesPerView: "auto",
+    slidesPerView: 1,
+    spaceBetween: 30,
 
     pagination: {
         el: '.swiper-pagination',
@@ -12,7 +17,7 @@ const swiper = new Swiper('.services', {
     },
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: '.button-prev',
+        nextEl: '.button-next',
     },
 });
