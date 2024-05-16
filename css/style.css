@@ -449,6 +449,7 @@ div.swiper-wrapper {
 
 .btn-swiper {
     width: 60px;
+    cursor: pointer;
 }
 
 .swiper-notification {
