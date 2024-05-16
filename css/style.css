@@ -47,6 +47,20 @@ section {
     background-color: #FFFFFF;
 }
 
+.btn {
+    background-color: #EC5D2A;
+    border: 1px solid #EC5D2A;
+    color: #FFF;
+    border-radius: 50px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #FFF;
+    color: #EC5D2A;
+}
+
 /* modal menu */
 
 .modal_menu {
@@ -129,6 +143,15 @@ header {
     display: flex;
     align-items: center;
     gap: 0.938rem;
+    position: relative;
+}
+
+.logo-link {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .logo-img {
@@ -222,14 +245,9 @@ header {
 }
 
 .hero-btn {
-    background-color: #EC5D2A;
-    border: 0 solid #EC5D2A;
-    color: #F3F3F3;
     font-size: 1rem;
     font-weight: 500;
     padding: 1.25rem 4.875rem;
-    border-radius: 35px;
-    cursor: pointer;
 }
 
 /* popular */
@@ -347,6 +365,12 @@ header {
     border-radius: 40px;
     width: 30%;
     gap: 1.25rem;
+    transform: translateY(0);
+    transition: all 0.4s;
+}
+
+.info-card:hover {
+    transform: translateY(-2%);
 }
 
 .info-card__img {
@@ -393,18 +417,14 @@ header {
 }
 
 .swiper-wrapper {
-    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
 }
 
 .services-btn {
-    background-color: #EC5D2A;
-    border: 0 solid #EC5D2A;
-    color: #F3F3F3;
     font-size: 1rem;
     font-weight: 500;
     padding: 1.25rem 3.5rem;
-    border-radius: 50px;
-    cursor: pointer;
 }
 
 .services {
@@ -446,13 +466,10 @@ header {
 
 .consultation-btn {
     background-color: #001F8E;
-    border: 0 solid #001F8E;
-    color: #F3F3F3;
+    border: 1px solid #001F8E;
     font-size: 0.875rem;
     font-weight: 400;
     padding: 1.25rem 3.938rem;
-    border-radius: 50px;
-    cursor: pointer;
 }
 
 /* documents */
@@ -670,6 +687,257 @@ input::placeholder {
 
 .contacts-group-gap {
     gap: 1.25rem;
+}
+
+
+/* --------SERVICES PAGE-------- */
+
+.services-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2.188rem;
+    justify-content: center;
+    padding: 0 2.5rem;
+}
+
+.card-radius-40 {
+    border-radius: 40px;
+}
+
+.visas-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    min-width: 400px;
+}
+
+.light-card-shadow {
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(136, 136, 136, 0.25);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(136, 136, 136, 0.25);
+    box-shadow: 0px 4px 7px 0px rgba(136, 136, 136, 0.25);
+}
+
+.visas-card:hover .visas-card__img {
+    filter: brightness(0.6);
+}
+
+.visas-card__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+    margin-bottom: -38px;
+    z-index: 0;
+}
+
+.visas-card__img {
+    width: 100%;
+    filter: brightness(1);
+    transition: all 0.4s;
+}
+
+.visas-card__title {
+    position: absolute;
+    left: 25px;
+    bottom: 61px;
+    color: #FFF;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.visas-card-description {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    z-index: 1;
+    padding: 1.563rem;
+    gap: 1.25rem;
+}
+
+.visas-card__text {
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: justify;
+    min-height: 144px;
+}
+
+.visas-card-info-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.visas-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.visas-card-info__key {
+    font-size: 0.875rem;
+}
+
+.visas-card-info__meaning {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.more-btn {
+    padding: 0.688rem 1.563rem;
+}
+
+.big-blue-btn {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #001F8E;
+    border: 2px solid #001F8E;
+    padding: 1.25rem 2.5rem 1.15rem 2.5rem;
+    line-height: 74%;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    cursor: pointer;
+}
+
+/* ---------EUROPE PAGE-------------- */
+.title-img-visas {
+    width: 100%;
+}
+
+.europe-visas-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    width: 100%;
+}
+
+.europe-visas-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 455px;
+    list-style: none;
+    gap: 1.25rem;
+}
+
+.flag-visa {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flag-visa-img {
+    width: 45px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.flag-visa-country {
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.flag-visa-country::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #001F8E;
+    transform: scale(0);
+    transform-origin: center;
+    transition: all 0.4s;
+}
+
+.europe-visas-list .flag-visa:hover {
+    cursor: pointer;
+}
+
+.europe-visas-list .flag-visa:hover .flag-visa-country {
+    color: #001F8E;
+}
+
+.europe-visas-list .flag-visa:hover .flag-visa-country::after {
+    transform: scale(1);
+}
+
+.europe-visas-list .flag-visa:hover .flag-visa-img {
+    transform: scale(1.1);
+}
+
+.visas-modal-wrapper {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 142, 0.75);
+    z-index: 1;
+}
+
+.visas-modal {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 5rem 2.5rem 3.75rem 2.5rem;
+    background-color: #F5F5F5;
+    gap: 1.75rem;
+    max-width: 470px;
+}
+
+.visas-modal-close {
+    position: absolute;
+    width: 40px;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+}
+
+.visas-card-info-row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.visas-card-info__bold-text {
+    font-weight: 600;
+}
+
+/* -----------ASIA PAGE------------ */
+.country-cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 2.625rem;
+}
+
+.country-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3.75rem 2.5rem;
+    background-color: #F5F5F5;
+    gap: 1.75rem;
+    width: 31%;
 }
 
 
