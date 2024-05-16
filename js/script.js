@@ -1,8 +1,5 @@
 'use strict';
 
-const prevBtn = document.querySelector('.btn-prev');
-const nextBtn = document.querySelector('.btn-next');
-
 const swiper = new Swiper('.services', {
 
     direction: 'horizontal',
