@@ -8,7 +8,7 @@ const swiper = new Swiper('.services', {
 
     direction: 'horizontal',
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 30,
 
     pagination: {

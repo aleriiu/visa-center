@@ -36,6 +36,7 @@ section {
     align-items: center;
     gap: 5rem;
     padding: 5rem 2.5rem;
+    width: 100%;
 }
 
 .main-title {
@@ -335,7 +336,7 @@ header {
 /* info */
 
 .bg-blue {
-    background-color: #001F8E;
+    background-color: #001F8E !important;
 }
 
 .color-white {
@@ -398,27 +399,26 @@ header {
 
 /* services */
 
-.services-slider {
-    display: flex;
-    gap: 2.688rem;
-}
-
-.services-card,
-.swiper-slider {
+.services-card {
     background-color: #F3F3F3;
     display: flex !important;
     flex-direction: column;
     align-items: center;
     gap: 1.688rem;
     padding: 1.875rem 2rem;
-    width: calc(33% - 15px) !important;
+    width: 100%;
     border-radius: 40px;
     height: auto !important;
 }
 
-.swiper-wrapper {
-    overflow-x: hidden;
-    padding-bottom: 2rem;
+div.swiper-wrapper {
+    padding-bottom: 3.5rem;
+    width: 85% !important;
+}
+
+.services .swiper-slide {
+    width: calc(33.3% - 28px) !important;
+    height: unset !important;
 }
 
 .services-btn {
@@ -427,17 +427,49 @@ header {
     padding: 1.25rem 3.5rem;
 }
 
-.services {
+.services,
+.reviews-swiper {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    overflow: hidden;
+    justify-content: space-between;
     width: 100% !important;
+    position: relative;
+    overflow-x: hidden;
+} 
+
+.button-next,
+.button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    background-color: #FFF;
+    z-index: 2;
 }
 
 .btn-swiper {
     width: 60px;
 }
+
+.swiper-notification {
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.swiper-horizontal .swiper-pagination {
+    bottom: 0;
+}
+
+.swiper-horizontal .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-horizontal .swiper-pagination-bullet-active {
+    background-color: #EC5D2A;
+}
+
 
 /* about */
 
@@ -516,18 +548,17 @@ header {
     align-items: center;
 }
 
-.reviews-card {
-    width: 50% !important;
-    border-radius: 40px;
-    display: flex !important;
-    align-items: flex-start;
-    padding: 2.5rem;
-    gap: 2.5rem;
+.reviews-swiper .swiper-slide {
+    width: calc(50% - 21px) !important;
+    height: unset !important;
 }
 
-.reviews-cards {
-    display: flex !important;
+.reviews-card {
+    border-radius: 40px;
+    display: flex;
+    align-items: flex-start;
     gap: 2.5rem;
+    padding: 2.5rem;
 }
 
 .reviews__img {
